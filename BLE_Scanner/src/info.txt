@@ -1,0 +1,50 @@
+To Peripheral Messages
+---------------------
+/*********************************************/
+/*To be checked Command Response*/
+1. FE06     - Make Discoverable
+2. FE07     - GAPUpdateAdvertising data
+3. FD03     - ATT_Exchange MTU Response
+4. FD09     - ATTReadByTypeResp
+5. FDFC	    - GATT Add Service
+6. FDFE     - GATT Add Attribute
+7. FD11     - ATT ReadBy GRP Type Resp
+8. FD13     - ATTWriteResp
+9. FD1B     - ATTHandleValue Notification
+10.FD9B     - GATT Notification 
+/*To be Checked on Event*/
+11.0602     - Advertisemant data update done
+12.0603     - Make Discoverable Done
+13.0604     - End Discoverable Done
+14.0605     - Link Established.
+15.0606     - Link Terminated
+16.0502     - ATT_ExchangeRequest
+17.0508     - ATT_ReadByTypeRequest
+18.0510     - ATTReadByGrpTypeRequest
+19 0512     - ATTWriteRequest
+/***********************************************/
+
+
+To central Messages
+-------------------------------------------------
+/*To be checked Command Response*/
+1. 0xFE04   - Discovery Request
+2. 0xFE09   - GAP_EstablishLinkRequest
+3. 0xFD88   - DiscCharByUUID
+4. 0xFDb4   - GATT_ReadUsingCharUUID
+5. 0xfd92   - GATT_WriteCharValue
+6. 0xfd02   - ATT_ExchangeMTUReq
+
+
+/*Event*/
+1. 060D     - GAP_DeviceInforamtion
+2. 0601     - GAP_DiscoveryDone
+3. 0605     - Link Established.
+4. 0606     - Link Terminated (To Be Seperated by the Connection Handle)
+5. 0509     - ReadByTypeRsp
+6. 0513     - ATT_WriteRsp
+7. 0607     - GAP_LinkParamUpdate
+8. 0503     - ExchangeMTURsp
+9. 0x057F   - ATT_MtuUpdatedEvt
+10.0x051b  - ATT_HandleValueNotification
+
